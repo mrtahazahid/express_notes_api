@@ -10,12 +10,12 @@ userRoutes.post("/signup", signUp)
 userRoutes.post("/signin", signIn)
 
 //Get all users
-userRoutes.get("/", auth, getallusers)
+userRoutes.get("/", getallusers)
 
 //Delete user
-userRoutes.delete("/:id", auth, deleteuser)
+userRoutes.delete("/:id", deleteuser)
 
 //Update user
-userRoutes.put("/:id", auth, updateuser)
+userRoutes.put("/:id", updateuser)
 
 module.exports = userRoutes;

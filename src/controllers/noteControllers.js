@@ -10,7 +10,7 @@ const createNote = async (req, res) =>{
 
     try {
         await newNote.save();
-        res.status(201).json({message : newNote})
+        res.status(201).json(newNote)
     } catch (error) {
         console.log(error)
         res.status(500).json({message : "Something went wrong"})
